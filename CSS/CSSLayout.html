@@ -1,0 +1,63 @@
+<!-- Display, Position, Float, Flexbox, Grid Properties -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Layout Demo</title>
+<style>
+/* Block & Inline */
+.block { display: block; background: lightgreen; padding: 5px; margin-bottom: 5px; }
+.inline { display: inline; background: lightcoral; padding: 5px; }
+
+/* Float */
+.float-left { float: left; width: 100px; height: 50px; background: lightblue; margin: 5px; }
+
+/* Position */
+.relative { position: relative; top: 10px; left: 10px; background: yellow; padding: 5px; }
+.absolute-container { position: relative; height: 60px; background: #eee; margin: 5px; }
+.absolute { position: absolute; top: 0; right: 0; background: orange; padding: 5px; }
+
+/* Flexbox */
+.flex-container { display: flex; justify-content: space-around; align-items: center; margin: 5px; }
+.flex-box { width: 60px; height: 60px; background: pink; }
+
+/* Grid */
+.grid-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; margin: 5px; }
+.grid-box { background: lightgray; height: 50px; text-align: center; line-height: 50px; }
+</style>
+</head>
+<body>
+
+<h3>Block & Inline</h3>
+<div class="block">Block</div>
+<div class="inline">Inline</div>
+<div class="inline">Inline</div>
+
+<h3>Float</h3>
+<div class="float-left">Float Left</div>
+<div class="float-left">Float Left</div>
+<div style="clear:both;"></div>
+
+<h3>Position</h3>
+<div class="relative">Relative</div>
+<div class="absolute-container">
+  <div class="absolute">Absolute</div>
+</div>
+
+<h3>Flexbox</h3>
+<div class="flex-container">
+  <div class="flex-box">1</div>
+  <div class="flex-box">2</div>
+  <div class="flex-box">3</div>
+</div>
+
+<h3>Grid</h3>
+<div class="grid-container">
+  <div class="grid-box">A</div>
+  <div class="grid-box">B</div>
+  <div class="grid-box">C</div>
+</div>
+
+</body>
+</html>

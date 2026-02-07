@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+    <style>
+    body { text-align:center; font-family: sans-serif; }
+    h1 { margin-bottom: 20px; }
+
+/* Container to align boxes horizontally */
+    .container {
+    display: flex;
+    justify-content: space-between; /* left, center, right */
+    align-items: center;
+    width: 80%; /* optional width */
+    margin: 0 auto; /* center container */
+    }
+
+/* Common styles for boxes */
+    .container div { width:150px; height:100px; }
+
+/* Individual gradients */
+    .box1 { background: linear-gradient(to right, red, yellow); }
+    .box2 { background: radial-gradient(circle, blue, green); }
+    .box3 { background: repeating-linear-gradient(45deg, pink, purple 20px); }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Gradients</h1>
+    <div class="container">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    </div>
+
+</body>
+</html>

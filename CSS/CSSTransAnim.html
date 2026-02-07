@@ -1,0 +1,47 @@
+<!-- CSS Transitions and Animations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transition & Animation</title>
+<style>
+/* Transition Example */
+.button {
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.5s;
+}
+.button:hover {
+  background: green;
+  transform: scale(1.2);
+}
+
+/* Animation Example */
+@keyframes move {
+  0% { transform: translateX(0); background: red; }
+  50% { transform: translateX(100px); background: yellow; }
+  100% { transform: translateX(0); background: red; }
+}
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+  margin-top: 20px;
+  animation: move 3s infinite;
+}
+</style>
+</head>
+<body>
+
+<h3>Transition (Hover the button)</h3>
+<button class="button">Hover Me!</button>
+
+<h3>Animation (Auto-moving box)</h3>
+<div class="box"></div>
+
+</body>
+</html>

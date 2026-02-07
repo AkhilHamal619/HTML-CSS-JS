@@ -1,0 +1,34 @@
+<!-- Pseudo-Classes and Pseudo-Elements -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-class & Pseudo-element Example</title>
+  <style>
+    /* Pseudo-class */
+    button:hover {
+      background-color: green;
+      color: white;
+    }
+
+    /* Pseudo-element */
+    p::before {
+      content: "Note: ";
+      color: red;
+      font-weight: bold;
+    }
+    p::first-letter {
+      font-size: 24px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>CSS Pseudo Example</h1>
+    <p>This is a paragraph demonstrating pseudo-elements.</p>
+    <button>Hover over me!</button>
+
+</body>
+</html>

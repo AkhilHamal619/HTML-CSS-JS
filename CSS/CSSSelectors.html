@@ -1,0 +1,52 @@
+<!-- Basic Selectors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> CSS Selectors</title>
+  <style>
+    h1 { color: blue; }       /* element selector */
+    .text { font-size: 18px; } /* class selector */
+    #btn { background: red; padding:4px}  /* id selector */
+  </style>
+</head>
+<body>
+
+    <h1>Basic Selectors</h1>
+    <p class="text">Paragraph with class</p>
+    <button id="btn">Click</button>
+
+</body>
+</html>
+
+<!-- Attribute Selectors -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   /* Select links with href attribute */
+   a[href] { color: blue; }
+
+    /* Select text inputs only */
+    input[type="text"] { border: 1px solid black; }
+
+    /* Images ending with .jpg */
+    img[src$=".jpg"] { border: 2px solid red; background-color: red;}
+    </style>
+</head>
+<body>
+    
+    <h1>Attribute Selectors</h1>
+    <a href="https://example.com">Example Link</a>
+    <br>
+    <input type="text" placeholder="Name">
+    <br>
+    <br>
+    <button id="btn">Flower</button>
+
+</body>
+</html>
+

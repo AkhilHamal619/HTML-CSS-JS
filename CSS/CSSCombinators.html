@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators Example</title>
+    <style>
+    /* Descendant */
+    div p { color: blue; }
+
+    /* Child */
+    div > p { font-weight: bold; }
+
+    /* Adjacent sibling */
+    h1 + p { background: yellow; }
+
+    /* General sibling */
+    h1 ~ p { font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <h1>Heading 1</h1>
+    <p>Adjacent sibling (first p after h1)</p>
+    <p>General sibling (second p after h1)</p>
+
+    <div>
+    <p>Descendant inside div</p>
+    <p>Direct child of div</p>
+    </div>
+
+</body>
+</html>

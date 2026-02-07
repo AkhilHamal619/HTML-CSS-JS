@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.
+</canvas>
+
+<script>
+  // Get the canvas element
+  var c = document.getElementById("myCanvas");
+
+  // Get the 2D drawing context
+  var ctx = c.getContext("2d");
+
+  // Start a new path
+  ctx.beginPath();
+
+  // Draw a circle: arc(x, y, radius, startAngle, endAngle)
+  ctx.arc(190, 100, 100, 0, 2 * Math.PI);
+
+  // Outline the circle
+  ctx.stroke();
+</script>
+
+</body>
+</html>
